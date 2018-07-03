@@ -16,11 +16,13 @@ import './static/css/reset.min.css';
 import './static/css/common.less';
 
 /*IMPORT COMPONENT*/
-import NavTop from './component/NavTop';
-import NavBottom from './component/NavBottom';
+import NavTop from './component/NavTop'
+import NavBottom from './component/NavBottom'
 import Home from './routes/Home';
-import Mycourse from './routes/Mycourse';
-import Person from './routes/Person';
+import Classify from './routes/Classify';
+import Find from './routes/Find';
+import ShopCart from './routes/ShopCart';
+import Login from './routes/Login';
 
 /*RENDER*/
 render(<Provider store={store}>
@@ -33,13 +35,14 @@ render(<Provider store={store}>
                 {/*MAIN=>ROUTE*/}
                 <main className='container'>
                     <Switch>
-                        <Route path='/course' component={Home}/>
-                        <Route path='/mycourse' component={Mycourse}/>
-                        <Route path='/person' component={Person}/>
-                        <Redirect to='/course'/>
+                        <Route path='/home' component={Home}/>
+                        <Route path='/classify' component={Classify}/>
+                        <Route path='/find' component={Find}/>
+                        <Route path='/shopcart' component={ShopCart}/>
+                        <Route path='/login' component={Login}/>
+                        <Redirect to='/home'/>
                     </Switch>
                 </main>
-
                 {/*FOOTER*/}
                 <NavBottom/>
             </div>
