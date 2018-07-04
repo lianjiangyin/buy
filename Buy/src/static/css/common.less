@@ -21,11 +21,22 @@ html {
   height: 0.9rem;
   line-height: 0.9rem;
   border-bottom: .02rem solid #D5D5D5;
-  .homeBox {
+  .baseBox {
     height: 100%;
-    .baseBox {
-      position: relative;
+    .homeBox {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 .2rem;
       height: 100%;
+      font-size: .4rem;
+      .icon {
+        color: #333;
+      }
+      span{
+        color: #333;
+      }
     }
   }
 }

@@ -30,8 +30,6 @@ render(<Provider store={store}>
         <LocaleProvider locale={zh_CN}>
             <div>
                 {/*HEADER*/}
-                <NavTop/>
-
                 {/*MAIN=>ROUTE*/}
                 <main className='container'>
                     <Switch>

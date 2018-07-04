@@ -19,7 +19,7 @@ class NavBottom extends React.Component {
                 <span>分类</span>
             </NavLink>
             <NavLink to='/find'>
-                <Icon type='dashboard'/>
+                <Icon type='compass'/>
                 <span>发现</span>
             </NavLink>
             <NavLink to='/shopcart'>
