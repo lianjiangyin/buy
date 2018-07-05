@@ -1,16 +1,25 @@
 .ClassifyBox {
+  //position: fixed;
+  //top: .9rem;
+  //right: 0;
 
-
+  margin-top:-.2rem;
   .ant-tabs-nav-wrap {
     margin-top: 0;
     background: #F9F8F7;
   }
+
   .ant-tabs-vertical > .ant-tabs-bar .ant-tabs-tab {
     padding: 13px 15px;
     margin: 0;
     text-align: center;
-
   }
+
+  .ant-tabs-tab-active{
+    background:white;
+    color: red !important;
+  }
+
   .bannerList {
 
     //background: skyblue;
@@ -43,6 +52,8 @@
 
 }
 .searchBox{
+  z-index:999;
+  background: white;
   display:flex;
   flex-direction:row;
   justify-content:space-between;
@@ -86,7 +97,7 @@
     height: 44px;
     text-align: center;
     line-height:44px;
-    font-size: 20px;
+    font-size: 22px;
   }
   .iconRight{
     display: block;
@@ -94,7 +105,56 @@
     height: 44px;
     text-align: center;
     line-height:44px;
-    font-size: 20px;
+    font-size: 22px;
+  }
+}
+.hotSearchBox{
+  .hotSearch{
+    padding-left: 13px;
+    .hotHead{
+      //height: 15px;
+      padding:3px 15px 11px 0;
+      p{
+        font-size: 15px;
+        line-height: 15px;
+        height: 15px;
+        color: #232326;
+        float: left;
+        width: 100px;
+        padding-left: 1px;
+        margin-bottom: 0;
+      }
+    }
+    .hotList{
+      span{
+        display: block;
+        max-width: 100%;
+        //overflow: hidden;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        float: left;
+        height: 32px;
+
+        a{
+          height: 23px;
+          line-height: 24px;
+          border-radius: 3px;
+          display: block;
+          width: 100%;
+          color: #686868;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          background-color: #f0f2f5;
+          padding-left: 13px;
+          padding-right: 13px;
+          overflow: hidden;
+          box-sizing: border-box;
+          font-size: 12px;
+
+
+        }
+      }
+    }
   }
 }
 

@@ -11,3 +11,4 @@ class Delicious extends React.Component{
     }
 }
 export default connect()(Delicious);
+
