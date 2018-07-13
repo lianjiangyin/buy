@@ -29,6 +29,7 @@ class Find extends React.Component{
                 <Route path="/find/nice" component={Nice}/>
                 <Redirect from="/find" to="/find/selected" />
             </Switch>
+
         </section>
     }
 }
